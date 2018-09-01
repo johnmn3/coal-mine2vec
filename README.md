@@ -28,7 +28,11 @@ clj -A:is-to map reduce for
  ... but may also be one of these: "&" "c]" "coll]" ":as"
 ```
 
-Might be interesting to semantically mutate existing programs, using this with something like gigasquid's generative, genetic programming tutorials using spec: https://github.com/gigasquid/genetic-programming-spec
+To try this as a git dep, from the comfort of your own ~/home, just do:
+
+`clojure -Sdeps '{:deps {johnmn3/coal-mine2vec {:git/url "https://github.com/johnmn3/coal-mine2vec.git" :sha "46af3670c16b9a3b827c1e144b76c116dc45a4ce"}}}' "-m" "coal-mine2vec.is-to" map reduce for`
+
+As an aside, it might be interesting to semantically mutate existing programs, using this with something like gigasquid's generative, genetic programming tutorials using spec: https://github.com/gigasquid/genetic-programming-spec
 
 ## License
 
