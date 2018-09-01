@@ -1,0 +1,9 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.10.0-alpha4"}
+        org.clojure/clojurescript {:mvn/version "1.10.238"}
+        johnmn3/clojure-word2vec {:git/url "https://github.com/johnmn3/clojure-word2vec.git"
+                                  :sha "8ff634b488788662553f5460d0bf1fae07682571"}
+        mfikes/coal-mine {:git/url "https://github.com/mfikes/coal-mine.git"
+                          :sha "1e8b057c2fa4aa8d07c1142e7be245331fdbfd9b"}}
+ :aliases
+ {:is-to {:main-opts ["-m" "coal-mine2vec.is-to"]}}}
